@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "FetchResultsController-Bridging-Header.h"
+
+
 
 @interface AppDelegate ()
 
@@ -16,8 +19,29 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"FetchResults.sqlite"];
+    [self insertAnimal];
     // Override point for customization after application launch.
     return YES;
+}
+
+
+- (void)insertAnimal
+{
+    Mammal *mammal = [Mammal MR_createEntity];
+    mammal.eatFood = @"我喜欢吃草";
+    mammal.sleepDec = @"早睡早起身体好";
+    mammal.suckle = @"你是喝羊奶长大的";
+    mammal.walk = @"我喜欢在草原上奔跑";
+  
+    Bird *bird = [Bird MR_createEntity];
+    bird.eatFood = @"我喜欢吃种子";
+    bird.sleepDec = @"我喜欢在树上睡";
+    bird.feed = @"我饿极的时候，还会吃粮食";
+    bird.fly = @"我自由自在的在天上飞";
+
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
 }
 
 
@@ -45,6 +69,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [MagicalRecord cleanUp];
 }
 
 

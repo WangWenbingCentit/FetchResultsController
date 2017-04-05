@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16E183b" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Animal" representedClassName="Animal" isAbstract="YES" syncable="YES">
+        <attribute name="eatFood" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sleepDec" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Bird" representedClassName="Bird" parentEntity="Animal" syncable="YES">
+        <attribute name="feed" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fly" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Mammal" representedClassName="Mammal" parentEntity="Animal" syncable="YES">
+        <attribute name="habit" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="suckle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="walk" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Animal" positionX="-63" positionY="-144" width="128" height="73"/>
+        <element name="Bird" positionX="-225" positionY="-21" width="128" height="73"/>
+        <element name="Mammal" positionX="99" positionY="-34" width="128" height="88"/>
+    </elements>
+</model>

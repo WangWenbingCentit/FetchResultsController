@@ -13,9 +13,18 @@
 		B2CD28851E94CC63008BCDAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CD28831E94CC63008BCDAE /* Main.storyboard */; };
 		B2CD28871E94CC63008BCDAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2CD28861E94CC63008BCDAE /* Assets.xcassets */; };
 		B2CD288A1E94CC63008BCDAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2CD28881E94CC63008BCDAE /* LaunchScreen.storyboard */; };
+		B2CD28941E94D795008BCDAE /* FetchResults.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2CD28921E94D795008BCDAE /* FetchResults.xcdatamodeld */; };
+		B2CD28B51E94DC5B008BCDAE /* Bird+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD28AF1E94DC5B008BCDAE /* Bird+CoreDataClass.swift */; };
+		B2CD28B61E94DC5B008BCDAE /* Bird+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD28B01E94DC5B008BCDAE /* Bird+CoreDataProperties.swift */; };
+		B2CD28B71E94DC5B008BCDAE /* Mammal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD28B11E94DC5B008BCDAE /* Mammal+CoreDataClass.swift */; };
+		B2CD28B81E94DC5B008BCDAE /* Mammal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD28B21E94DC5B008BCDAE /* Mammal+CoreDataProperties.swift */; };
+		B2CD28B91E94DC5B008BCDAE /* Animal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD28B31E94DC5B008BCDAE /* Animal+CoreDataClass.swift */; };
+		B2CD28BA1E94DC5B008BCDAE /* Animal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD28B41E94DC5B008BCDAE /* Animal+CoreDataProperties.swift */; };
+		F36B3966C2257D9BC08CF572 /* Pods_FetchResultsController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCB014AF8F46A95F339CA46 /* Pods_FetchResultsController.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51CD4ABE247A1620267B3514 /* Pods-FetchResultsController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchResultsController.release.xcconfig"; path = "Pods/Target Support Files/Pods-FetchResultsController/Pods-FetchResultsController.release.xcconfig"; sourceTree = "<group>"; };
 		B2CD28771E94CC62008BCDAE /* FetchResultsController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchResultsController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CD287B1E94CC62008BCDAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2CD287D1E94CC62008BCDAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +35,17 @@
 		B2CD28861E94CC63008BCDAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2CD28891E94CC63008BCDAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2CD288B1E94CC63008BCDAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2CD28911E94D002008BCDAE /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B2CD28931E94D795008BCDAE /* FetchResults.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FetchResults.xcdatamodel; sourceTree = "<group>"; };
+		B2CD28AF1E94DC5B008BCDAE /* Bird+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bird+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B2CD28B01E94DC5B008BCDAE /* Bird+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bird+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B2CD28B11E94DC5B008BCDAE /* Mammal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mammal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B2CD28B21E94DC5B008BCDAE /* Mammal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mammal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B2CD28B31E94DC5B008BCDAE /* Animal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animal+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B2CD28B41E94DC5B008BCDAE /* Animal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B2CD28BB1E94DC7F008BCDAE /* FetchResultsController-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FetchResultsController-Bridging-Header.h"; sourceTree = "<group>"; };
+		CD9F9942EAC86D093B843D74 /* Pods-FetchResultsController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchResultsController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FetchResultsController/Pods-FetchResultsController.debug.xcconfig"; sourceTree = "<group>"; };
+		FFCB014AF8F46A95F339CA46 /* Pods_FetchResultsController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FetchResultsController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36B3966C2257D9BC08CF572 /* Pods_FetchResultsController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98488893A63701305A8FAF8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFCB014AF8F46A95F339CA46 /* Pods_FetchResultsController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B2CD286E1E94CC62008BCDAE = {
 			isa = PBXGroup;
 			children = (
 				B2CD28791E94CC62008BCDAE /* FetchResultsController */,
 				B2CD28781E94CC62008BCDAE /* Products */,
+				FA88847A7369A9111C8868C5 /* Pods */,
+				98488893A63701305A8FAF8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +89,13 @@
 		B2CD28791E94CC62008BCDAE /* FetchResultsController */ = {
 			isa = PBXGroup;
 			children = (
+				B2CD28951E94DA57008BCDAE /* Model */,
+				B2CD28911E94D002008BCDAE /* PrefixHeader.pch */,
 				B2CD287D1E94CC62008BCDAE /* AppDelegate.h */,
 				B2CD287E1E94CC62008BCDAE /* AppDelegate.m */,
 				B2CD28801E94CC62008BCDAE /* ViewController.h */,
 				B2CD28811E94CC62008BCDAE /* ViewController.m */,
+				B2CD28921E94D795008BCDAE /* FetchResults.xcdatamodeld */,
 				B2CD28831E94CC63008BCDAE /* Main.storyboard */,
 				B2CD28861E94CC63008BCDAE /* Assets.xcassets */,
 				B2CD28881E94CC63008BCDAE /* LaunchScreen.storyboard */,
@@ -79,6 +113,29 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B2CD28951E94DA57008BCDAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B2CD28BB1E94DC7F008BCDAE /* FetchResultsController-Bridging-Header.h */,
+				B2CD28AF1E94DC5B008BCDAE /* Bird+CoreDataClass.swift */,
+				B2CD28B01E94DC5B008BCDAE /* Bird+CoreDataProperties.swift */,
+				B2CD28B11E94DC5B008BCDAE /* Mammal+CoreDataClass.swift */,
+				B2CD28B21E94DC5B008BCDAE /* Mammal+CoreDataProperties.swift */,
+				B2CD28B31E94DC5B008BCDAE /* Animal+CoreDataClass.swift */,
+				B2CD28B41E94DC5B008BCDAE /* Animal+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA88847A7369A9111C8868C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD9F9942EAC86D093B843D74 /* Pods-FetchResultsController.debug.xcconfig */,
+				51CD4ABE247A1620267B3514 /* Pods-FetchResultsController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B2CD288E1E94CC63008BCDAE /* Build configuration list for PBXNativeTarget "FetchResultsController" */;
 			buildPhases = (
+				DC4A775D07B602E65CDAC876 /* [CP] Check Pods Manifest.lock */,
 				B2CD28731E94CC62008BCDAE /* Sources */,
 				B2CD28741E94CC62008BCDAE /* Frameworks */,
 				B2CD28751E94CC62008BCDAE /* Resources */,
+				B137612663F885884C75DCAC /* [CP] Embed Pods Frameworks */,
+				54D37967278DC28B15203DB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -111,6 +171,7 @@
 					B2CD28761E94CC62008BCDAE = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = T3GJXPTE2B;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -146,14 +207,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54D37967278DC28B15203DB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FetchResultsController/Pods-FetchResultsController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B137612663F885884C75DCAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FetchResultsController/Pods-FetchResultsController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC4A775D07B602E65CDAC876 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B2CD28731E94CC62008BCDAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2CD28B61E94DC5B008BCDAE /* Bird+CoreDataProperties.swift in Sources */,
 				B2CD28821E94CC63008BCDAE /* ViewController.m in Sources */,
+				B2CD28B91E94DC5B008BCDAE /* Animal+CoreDataClass.swift in Sources */,
+				B2CD28B81E94DC5B008BCDAE /* Mammal+CoreDataProperties.swift in Sources */,
+				B2CD28B71E94DC5B008BCDAE /* Mammal+CoreDataClass.swift in Sources */,
+				B2CD28941E94D795008BCDAE /* FetchResults.xcdatamodeld in Sources */,
 				B2CD287F1E94CC62008BCDAE /* AppDelegate.m in Sources */,
+				B2CD28BA1E94DC5B008BCDAE /* Animal+CoreDataProperties.swift in Sources */,
 				B2CD287C1E94CC62008BCDAE /* main.m in Sources */,
+				B2CD28B51E94DC5B008BCDAE /* Bird+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +319,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -219,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -251,6 +368,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -261,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -271,25 +389,40 @@
 		};
 		B2CD288F1E94CC63008BCDAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD9F9942EAC86D093B843D74 /* Pods-FetchResultsController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = T3GJXPTE2B;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/FetchResultsController/PrefixHeader.pch";
 				INFOPLIST_FILE = FetchResultsController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Centit.FetchResultsController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FetchResultsController/Model/FetchResultsController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		B2CD28901E94CC63008BCDAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51CD4ABE247A1620267B3514 /* Pods-FetchResultsController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = T3GJXPTE2B;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/FetchResultsController/PrefixHeader.pch";
 				INFOPLIST_FILE = FetchResultsController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Centit.FetchResultsController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FetchResultsController/Model/FetchResultsController-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -312,8 +445,22 @@
 				B2CD28901E94CC63008BCDAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B2CD28921E94D795008BCDAE /* FetchResults.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B2CD28931E94D795008BCDAE /* FetchResults.xcdatamodel */,
+			);
+			currentVersion = B2CD28931E94D795008BCDAE /* FetchResults.xcdatamodel */;
+			path = FetchResults.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B2CD286F1E94CC62008BCDAE /* Project object */;
 }
