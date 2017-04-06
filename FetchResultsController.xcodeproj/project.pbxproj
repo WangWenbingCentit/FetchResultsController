@@ -20,6 +20,7 @@
 		B2CD28B81E94DC5B008BCDAE /* Mammal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD28B21E94DC5B008BCDAE /* Mammal+CoreDataProperties.swift */; };
 		B2CD28B91E94DC5B008BCDAE /* Animal+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD28B31E94DC5B008BCDAE /* Animal+CoreDataClass.swift */; };
 		B2CD28BA1E94DC5B008BCDAE /* Animal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CD28B41E94DC5B008BCDAE /* Animal+CoreDataProperties.swift */; };
+		B2CD28BE1E94F0CA008BCDAE /* MessageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD28BD1E94F0CA008BCDAE /* MessageViewModel.m */; };
 		F36B3966C2257D9BC08CF572 /* Pods_FetchResultsController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCB014AF8F46A95F339CA46 /* Pods_FetchResultsController.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,8 @@
 		B2CD28B31E94DC5B008BCDAE /* Animal+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animal+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B2CD28B41E94DC5B008BCDAE /* Animal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animal+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B2CD28BB1E94DC7F008BCDAE /* FetchResultsController-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FetchResultsController-Bridging-Header.h"; sourceTree = "<group>"; };
+		B2CD28BC1E94F0CA008BCDAE /* MessageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewModel.h; sourceTree = "<group>"; };
+		B2CD28BD1E94F0CA008BCDAE /* MessageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewModel.m; sourceTree = "<group>"; };
 		CD9F9942EAC86D093B843D74 /* Pods-FetchResultsController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchResultsController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FetchResultsController/Pods-FetchResultsController.debug.xcconfig"; sourceTree = "<group>"; };
 		FFCB014AF8F46A95F339CA46 /* Pods_FetchResultsController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FetchResultsController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -95,6 +98,8 @@
 				B2CD287E1E94CC62008BCDAE /* AppDelegate.m */,
 				B2CD28801E94CC62008BCDAE /* ViewController.h */,
 				B2CD28811E94CC62008BCDAE /* ViewController.m */,
+				B2CD28BC1E94F0CA008BCDAE /* MessageViewModel.h */,
+				B2CD28BD1E94F0CA008BCDAE /* MessageViewModel.m */,
 				B2CD28921E94D795008BCDAE /* FetchResults.xcdatamodeld */,
 				B2CD28831E94CC63008BCDAE /* Main.storyboard */,
 				B2CD28861E94CC63008BCDAE /* Assets.xcassets */,
@@ -264,6 +269,7 @@
 				B2CD28821E94CC63008BCDAE /* ViewController.m in Sources */,
 				B2CD28B91E94DC5B008BCDAE /* Animal+CoreDataClass.swift in Sources */,
 				B2CD28B81E94DC5B008BCDAE /* Mammal+CoreDataProperties.swift in Sources */,
+				B2CD28BE1E94F0CA008BCDAE /* MessageViewModel.m in Sources */,
 				B2CD28B71E94DC5B008BCDAE /* Mammal+CoreDataClass.swift in Sources */,
 				B2CD28941E94D795008BCDAE /* FetchResults.xcdatamodeld in Sources */,
 				B2CD287F1E94CC62008BCDAE /* AppDelegate.m in Sources */,

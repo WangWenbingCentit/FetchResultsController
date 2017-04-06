@@ -23,7 +23,7 @@
 #import <Overcoat/PromiseKit+Overcoat.h>
 #import <PromiseKit/PromiseKit.h>
 #import "AFURLSessionManager.h"
-
+#import <ReactiveCocoa/ReactiveCocoa.h>
 #import <MagicalRecord/MagicalRecord.h>
 //define this constant if you want to use Masonry without the 'mas_' prefix
 #define MAS_SHORTHAND

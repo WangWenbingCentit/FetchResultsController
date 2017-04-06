@@ -7,10 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "MessageViewModel.h"
+@interface ViewController ()<UITableViewDelegate, NSFetchedResultsControllerDelegate>
 
-@interface ViewController ()<NSFetchedResultsControllerDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak)UITableView *tableView;
 
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) MessageViewModel *messageViewModel;
 
 @property (nonatomic, strong) NSFetchedResultsController *fetchResultsController;
 
@@ -20,9 +22,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UITableView *tableView = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].bounds style:UITableViewStylePlain];
+    
+    self.messageViewModel.fetchResultsController = self.fetchResultsController;
+    tableView.dataSource = self.messageViewModel;
+    self.messageViewModel.tableView = tableView;
+    tableView.delegate = self;
+    [self.view addSubview:tableView];
+    
     // Do any additional setup after loading the view, typically from a nib.
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    self.tableView = tableView;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -31,7 +42,13 @@
 
 }
 
-
+- (MessageViewModel *)messageViewModel
+{
+    if (!_messageViewModel) {
+        _messageViewModel = [[MessageViewModel alloc] init];
+    }
+    return _messageViewModel;
+}
 - (NSFetchedResultsController *)fetchResultsController
 {
     if (nil != _fetchResultsController) {
@@ -69,35 +86,36 @@
 }
 
 #pragma mark   UITableViewDataSource
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return [self.fetchResultsController sections].count;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    id <NSFetchedResultsSectionInfo> sessionInfo = [[self.fetchResultsController sections] objectAtIndex:section];
-    
-    return [sessionInfo numberOfObjects];
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell = [cell initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
-    Bird *bird = [self.fetchResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = bird.fly;
-    cell.detailTextLabel.text = bird.feed;
-    
-    return cell;
-}
+//
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+//{
+//    return [self.fetchResultsController sections].count;
+//}
+//
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+//{
+//    id <NSFetchedResultsSectionInfo> sessionInfo = [[self.fetchResultsController sections] objectAtIndex:section];
+//    
+//    return [sessionInfo numberOfObjects];
+//}
+//
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+//    cell = [cell initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
+//    Bird *bird = [self.fetchResultsController objectAtIndexPath:indexPath];
+//    cell.textLabel.text = bird.fly;
+//    cell.detailTextLabel.text = bird.feed;
+//    
+//    return cell;
+//}
 
 #pragma mark ------ UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
+
 }
 
 #pragma mark --NSFetchResultsControllerDelegate
@@ -142,26 +160,20 @@
             [self.tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
             
-            //[self.tableView moveRowAtIndexPath:indexPath toIndexPath:newIndexPath];
+           
         }
             
             
             break;
         case NSFetchedResultsChangeUpdate:
         {
-//            Session *sessionInfo = [self.fetchResultsController objectAtIndexPath:indexPath];
-//            Employee *fromEmployee = (Employee *)sessionInfo.fromEmplyee;
-//            Message *messageInfo = (Message *)sessionInfo.lastMessage;
-//
-//            UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
-//            cell = [cell initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
-//            cell.textLabel.text = fromEmployee.empName;
-//            cell.detailTextLabel.text = messageInfo.content;
+
             
             Bird *birdSession = [self.fetchResultsController objectAtIndexPath:indexPath];
             UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
             cell.textLabel.text = birdSession.feed;
             cell.detailTextLabel.text = birdSession.fly;
+            
             
         }
             break;
@@ -170,6 +182,18 @@
     }
     
 }
+
+#pragma mark -- tableView Delegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        return 80;
+    }
+    return 60;
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
