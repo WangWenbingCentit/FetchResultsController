@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '65856701E63C0A1B94B96F98'
+               BlueprintIdentifier = '6E02B3584E7FD4DA42EB4BD8'
                BlueprintName = 'CommonCrypto'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'CommonCrypto.framework'>

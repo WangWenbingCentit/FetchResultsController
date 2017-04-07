@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F8D3CAAF3AB743220DCF0E55'
-               BlueprintName = 'Mantle'
+               BlueprintIdentifier = '1004066317D20C2FC1296FF4'
+               BlueprintName = 'ReactiveViewModel'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Mantle.framework'>
+               BuildableName = 'ReactiveViewModel.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

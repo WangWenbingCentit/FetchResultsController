@@ -7,7 +7,7 @@
 //
 
 #import "MessageViewModel.h"
-
+#import "UIMessageTableViewCell.h"
 @interface MessageViewModel ()
 
 @end
@@ -25,51 +25,8 @@
 
 - (void)initialBind
 {
-    //[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+    
 }
-////- (Bird *)bird
-////{
-////    if (!_bird) {
-////        _bird = [Bird MR_createEntity];
-////    }
-////    return _bird;
-////}
-//
-//
-//- (NSFetchedResultsController *)fetchResultsController
-//{
-//    if (nil != _fetchResultsController) {
-//        return _fetchResultsController;
-//    }
-//    
-//    NSManagedObjectContext *context = [NSManagedObjectContext MR_defaultContext];
-//    
-//    if (context == nil) {
-//        return nil;
-//    }
-//    
-//    NSFetchRequest *fetchRequest = [Bird MR_requestAllSortedBy:@"feed" ascending:NO];
-//    [fetchRequest setFetchBatchSize:20];
-//    [fetchRequest setFetchLimit:100];
-//    NSString *strCacheName = [NSString stringWithFormat:@"SessionMessage"];
-//    
-//    NSFetchedResultsController *fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:context sectionNameKeyPath:nil cacheName:strCacheName];
-//  
-//    _fetchResultsController = fetchedResultsController;
-//    
-//    NSError *error = nil;
-//    
-//    [NSFetchedResultsController deleteCacheWithName:strCacheName];
-//    
-//    if (![_fetchResultsController performFetch:&error]) {
-//        
-//        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-//        
-//        abort();
-//    }
-//    
-//    return _fetchResultsController;
-//}
 
 #pragma mark   UITableViewDataSource
 
@@ -87,13 +44,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell = [cell initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+//    cell = [cell initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     Bird *bird = [self.fetchResultsController objectAtIndexPath:indexPath];
 
-    cell.textLabel.text = bird.fly;
-    cell.detailTextLabel.text = bird.feed;
-  
+//    cell.textLabel.text = bird.fly;
+//    cell.detailTextLabel.text = bird.feed;
+    UIMessageTableViewCell *cell = [UIMessageTableViewCell cellWithTableView:tableView atBird:bird];
     
     return cell;
 }

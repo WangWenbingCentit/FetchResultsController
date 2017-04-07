@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B23838471E960B17009FB5D4 /* MessageListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B23838461E960B17009FB5D4 /* MessageListViewModel.m */; };
+		B2A7C1811E95D7CA00001DFC /* UIMessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A7C1801E95D7CA00001DFC /* UIMessageTableViewCell.m */; };
 		B2CD287C1E94CC62008BCDAE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD287B1E94CC62008BCDAE /* main.m */; };
 		B2CD287F1E94CC62008BCDAE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD287E1E94CC62008BCDAE /* AppDelegate.m */; };
 		B2CD28821E94CC63008BCDAE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2CD28811E94CC62008BCDAE /* ViewController.m */; };
@@ -26,6 +28,10 @@
 
 /* Begin PBXFileReference section */
 		51CD4ABE247A1620267B3514 /* Pods-FetchResultsController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FetchResultsController.release.xcconfig"; path = "Pods/Target Support Files/Pods-FetchResultsController/Pods-FetchResultsController.release.xcconfig"; sourceTree = "<group>"; };
+		B23838451E960B17009FB5D4 /* MessageListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageListViewModel.h; sourceTree = "<group>"; };
+		B23838461E960B17009FB5D4 /* MessageListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageListViewModel.m; sourceTree = "<group>"; };
+		B2A7C17F1E95D7CA00001DFC /* UIMessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMessageTableViewCell.h; sourceTree = "<group>"; };
+		B2A7C1801E95D7CA00001DFC /* UIMessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMessageTableViewCell.m; sourceTree = "<group>"; };
 		B2CD28771E94CC62008BCDAE /* FetchResultsController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchResultsController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2CD287B1E94CC62008BCDAE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B2CD287D1E94CC62008BCDAE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -71,6 +77,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B2A7C1791E95D58D00001DFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2A7C17F1E95D7CA00001DFC /* UIMessageTableViewCell.h */,
+				B2A7C1801E95D7CA00001DFC /* UIMessageTableViewCell.m */,
+				B23838451E960B17009FB5D4 /* MessageListViewModel.h */,
+				B23838461E960B17009FB5D4 /* MessageListViewModel.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B2CD286E1E94CC62008BCDAE = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +109,7 @@
 		B2CD28791E94CC62008BCDAE /* FetchResultsController */ = {
 			isa = PBXGroup;
 			children = (
+				B2A7C1791E95D58D00001DFC /* View */,
 				B2CD28951E94DA57008BCDAE /* Model */,
 				B2CD28911E94D002008BCDAE /* PrefixHeader.pch */,
 				B2CD287D1E94CC62008BCDAE /* AppDelegate.h */,
@@ -266,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2CD28B61E94DC5B008BCDAE /* Bird+CoreDataProperties.swift in Sources */,
+				B2A7C1811E95D7CA00001DFC /* UIMessageTableViewCell.m in Sources */,
 				B2CD28821E94CC63008BCDAE /* ViewController.m in Sources */,
 				B2CD28B91E94DC5B008BCDAE /* Animal+CoreDataClass.swift in Sources */,
 				B2CD28B81E94DC5B008BCDAE /* Mammal+CoreDataProperties.swift in Sources */,
@@ -274,6 +293,7 @@
 				B2CD28941E94D795008BCDAE /* FetchResults.xcdatamodeld in Sources */,
 				B2CD287F1E94CC62008BCDAE /* AppDelegate.m in Sources */,
 				B2CD28BA1E94DC5B008BCDAE /* Animal+CoreDataProperties.swift in Sources */,
+				B23838471E960B17009FB5D4 /* MessageListViewModel.m in Sources */,
 				B2CD287C1E94CC62008BCDAE /* main.m in Sources */,
 				B2CD28B51E94DC5B008BCDAE /* Bird+CoreDataClass.swift in Sources */,
 			);

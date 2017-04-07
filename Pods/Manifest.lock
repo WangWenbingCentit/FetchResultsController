@@ -24,6 +24,9 @@ PODS:
   - CommonCrypto (1.1)
   - Instabug (7.0.4)
   - ISO8601DateFormatter (0.8)
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
   - MagicalRecord (2.3.2):
     - MagicalRecord/Core (= 2.3.2)
   - MagicalRecord/Core (2.3.2)
@@ -163,6 +166,8 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - ReactiveViewModel (0.3):
+    - ReactiveCocoa (~> 2.4)
 
 DEPENDENCIES:
   - AFNetworking
@@ -170,6 +175,7 @@ DEPENDENCIES:
   - CommonCrypto (~> 1.1)
   - Instabug
   - ISO8601DateFormatter
+  - libextobjc/EXTScope (~> 0.4)
   - MagicalRecord
   - Mantle
   - Overcoat (~> 2.0)
@@ -177,6 +183,7 @@ DEPENDENCIES:
   - PromiseKit (~> 1.6)
   - PromiseKit/all (~> 1.6)
   - ReactiveCocoa (~> 2.5)
+  - ReactiveViewModel (~> 0.2)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
@@ -184,13 +191,15 @@ SPEC CHECKSUMS:
   CommonCrypto: e18c8416332cca5efe80c197f2a522d471c42626
   Instabug: 83400128ded3e1dca95a96131419ea49bd92991d
   ISO8601DateFormatter: 4551b6ce4f83185425f583b0b3feb3c7b59b942c
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   Mantle: f03b2b606c3f0cabd80214ad8a2fed6b464a7359
   OMGHTTPURLRQ: c4268dea4295b585d711055dbcd87bfa82badd5f
   Overcoat: a8d02b26f11e72ca10b4d8d786f6df83b3277b28
   PromiseKit: 102844c7b5ccff53f693e0710365c445d8df3871
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  ReactiveViewModel: 58918dcbcec2d3151195ab1ed9163c57a8163999
 
-PODFILE CHECKSUM: f5676ad6731091ccfeac6609e0a48a8689637405
+PODFILE CHECKSUM: 1266a73a57e11d4a506d22c05a0ba37657f81fd7
 
 COCOAPODS: 1.2.0.beta.3

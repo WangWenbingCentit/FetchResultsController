@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MessageViewModel.h"
+#import "UIMessageTableViewCell.h"
 @interface ViewController ()<UITableViewDelegate, NSFetchedResultsControllerDelegate>
 
 @property (nonatomic, weak)UITableView *tableView;
@@ -31,8 +32,7 @@
     [self.view addSubview:tableView];
     
     // Do any additional setup after loading the view, typically from a nib.
-    
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+
     self.tableView = tableView;
 }
 
@@ -170,7 +170,7 @@
 
             
             Bird *birdSession = [self.fetchResultsController objectAtIndexPath:indexPath];
-            UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+            UIMessageTableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
             cell.textLabel.text = birdSession.feed;
             cell.detailTextLabel.text = birdSession.fly;
             

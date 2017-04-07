@@ -18,4 +18,6 @@ target 'FetchResultsController' do
 		pod 'Apptimize'
         pod 'Instabug'
  pod 'MagicalRecord'
+pod 'ReactiveViewModel', ‘~> 0.2’
+pod 'libextobjc/EXTScope', ‘~> 0.4'
 end
